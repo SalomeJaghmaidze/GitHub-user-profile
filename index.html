@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Poppins:wght@100&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Poppins:wght@100&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Github</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-header">
+            <p class="header-text">devfinder</p>
+        </div>
+
+        <div class="search-section">
+            <form id="form" role="search"></form>
+            <button type="submit" id="search-icon" onclick=""><i class="fa fa-search"></i></button>
+            <input type="search" id="site-search" name="q" aria-label="Search" placeholder="Search GitHub username...">
+            </form>
+            <button onclick="getUser()" id="search-btn">Search</button>
+        </div>
+
+        <div class="main">
+            <div class="secondary">
+                <img src="assets/imgs/Octocat.jpg" alt="" class="src" id="mainImage">
+            </div>
+
+            <div class="primary">
+                <div class="basic-info">
+                    <div class="basic-info-outline">
+                        <div class="basic-info-inline">
+                            <p id="name">The Octocat</p>
+                            <p id="username">@octocat</p>
+                        </div>
+                        <div class="">
+                            <p id="date">Joined 25 Jan 2021</p>
+                        </div>
+                    </div>
+                    <div class="">
+                        <p class="info-bio" id="info-bio">This profile has no bio</p>
+                    </div>
+                </div>
+
+
+
+
+                <div class="main-info">
+                    <div class="main-info-section">
+                        <p>Repos</p>
+                        <p class="info-numbers" id="reposNum">8</p>
+                    </div>
+
+                    <div class="main-info-section">
+                        <p>Followers</p>
+                        <p class="info-numbers" id="followersNum">3938</p>
+                    </div>
+
+                    <div class="main-info-section">
+                        <p>Following</p>
+                        <p class="info-numbers" id="followingNum">9</p>
+                    </div>
+                </div>
+
+                <div class="additional-info">
+                    <div class="info-section">
+                        <div class="info-section-part">
+                            <i class="fas fa-map-marker"></i>
+                            <p id="location">San Francisco</p>
+                        </div>
+                        <div class="info-section-part">
+                            <i class="fas fa-link"></i>
+                            <a href="" id="profileUrl">https://github.blog</a>
+                        </div>
+                    </div>
+                    <div class="info-section">
+                        <div class="info-section-part">
+                            <i class="fab fa-twitter"></i>
+                            <a href="" id="twitter-url">Not Available</a>
+                        </div>
+                        <div class="info-section-part">
+                            <i class="fas fa-igloo"></i>
+                            <p id="companyName">@github</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/scripts.js"></script>
+    <script src="https://kit.fontawesome.com/0fc87cf8d3.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

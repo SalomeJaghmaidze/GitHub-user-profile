@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+    background-color: #141C2F;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 45%;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+}
+
+.header-text {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+/* Styles for search section */ 
+.search-section, .main {
+    background-color: #1F2A48;
+    border-radius: 12px;
+    width: 100%;
+    flex-direction: row;
+}
+
+.main {
+    margin-top: 20px;
+    display: flex;
+} 
+
+#search-icon {
+    all: unset;
+    cursor: pointer;
+    height: 50px;
+    color: #0C4B9E;
+    padding-left: 20px;
+  }
+
+#search-btn {
+    background-color: #0179FE;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 12px 26px;
+    text-decoration: none;
+    margin: 6px 0 6px 28px; 
+    cursor: pointer;
+}
+
+input {
+    background-color: #1F2A48;
+    color: white;
+    width: 70%;
+    height: 30px;
+    outline: none;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+  }
+
+::placeholder {
+    color: white;
+    font-size: 15px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    letter-spacing: 1.5px;
+}
+
+/* Styles for image section*/ 
+
+#mainImage {
+    width: 90px;
+    height: 90px;
+    margin: 40px 30px;
+    border-radius: 50%;
+}
+
+/* Styles for personal information*/ 
+
+.basic-info {
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    margin-top: 8px;
+}
+
+.basic-info-outline {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    margin-top: 5px;
+}
+
+.basic-info-inline {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.primary {
+    color: white;
+}
+
+#name {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+}
+
+#username {
+    margin-top: -20px;
+    color: #215BAF;
+}
+
+#date {
+    font-size: 14px;
+    margin-top: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: bold;
+}
+
+.info-bio {
+    font-weight: 80%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+}
+
+/* Styles for main information*/ 
+
+.main-info {
+    display: flex;
+    background-color: #141C2F;
+    border-radius: 12px;
+    justify-content: space-evenly;
+    margin: 10px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.info-numbers {
+    font-weight: bold;
+    margin-top: -11px;
+}
+
+/* Styles for additional information*/ 
+
+.additional-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 30px 20px 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 80%;
+}
+
+.info-section-part {
+    display: flex;
+    align-items: center;
+    height: 35px;
+}
+
+.info-section-part i {
+    margin-right: 10px;
+}
+
+#profileUrl, #twitter-url {
+    color: white;
+    text-decoration:none;
+}
+ 
