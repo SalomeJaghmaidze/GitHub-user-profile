@@ -24,7 +24,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" id="container">
         <div class="container-header">
             <p class="header-text">devfinder</p>
         </div>
@@ -36,12 +36,11 @@
             </form>
             <button onclick="getUser()" id="search-btn">Search</button>
         </div>
-
-        <div class="main">
+        <img src="assets/imgs/not-found.gif" alt="" id="errorimg" style="display: none;">
+        <div class="main" id="main">
             <div class="secondary">
                 <img src="assets/imgs/Octocat.jpg" alt="" class="src" id="mainImage">
             </div>
-
             <div class="primary">
                 <div class="basic-info">
                     <div class="basic-info-outline">
