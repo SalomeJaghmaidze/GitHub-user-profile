@@ -8,13 +8,10 @@ function getUser() {
 
             var main = document.getElementById('main');
             var errorimage = document.getElementById('errorimg');
+            console.log(errorimage);
 
             if (response.message == "Not Found") {
                 main.style.display = "none";
-                var errorimage = document.createElement('img');
-                errorimage.src = "../imgs/imgs/not-found.gif";
-                errorimage.setAttribute(id, "errorimage");
-                document.getElementById('container').appendChild(errorimage);
                 errorimage.style.display = "block";
                 return
             }
