@@ -11,8 +11,11 @@ function getUser() {
 
             if (response.message == "Not Found") {
                 main.style.display = "none";
+                var errorimage = document.createElement('img');
+                errorimage.src = "../imgs/imgs/not-found.gif";
+                errorimage.setAttribute(id, "errorimage");
+                document.getElementById('container').appendChild(errorimage);
                 errorimage.style.display = "block";
-                console.log('mushaobs')
                 return
             }
 
