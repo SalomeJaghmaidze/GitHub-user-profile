@@ -8,7 +8,6 @@ function getUser() {
 
             var main = document.getElementById('main');
             var errorimage = document.getElementById('errorimg');
-            console.log(errorimage);
 
             if (response.message == "Not Found") {
                 main.style.display = "none";

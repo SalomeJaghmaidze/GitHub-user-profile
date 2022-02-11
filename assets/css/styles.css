@@ -20,16 +20,22 @@ body {
 }
 
 /* Styles for search section */ 
-.search-section, .main {
+.search-section {
     background-color: #1F2A48;
     border-radius: 12px;
     width: 100%;
     flex-direction: row;
+    
 }
 
 .main {
     margin-top: 20px;
     display: flex;
+    flex-direction: column;
+    background-color: #1F2A48;
+    border-radius: 12px;
+    width: 100%;
+    
 } 
 
 #search-icon {
@@ -103,6 +109,11 @@ input {
 
 .primary {
     color: white;
+    
+}
+ 
+.initial-info {
+    display: flex;
 }
 
 #name {
@@ -137,13 +148,17 @@ input {
     background-color: #141C2F;
     border-radius: 12px;
     justify-content: space-evenly;
-    margin: 10px 0;
+    margin-left:auto;
+    margin-right:45px;
+    width: 68%;
     font-family: 'Poppins', sans-serif;
+    color: white;
+   
 }
 
 .info-numbers {
     font-weight: bold;
-    margin-top: -11px;
+    
 }
 
 /* Styles for additional information*/ 
@@ -151,10 +166,14 @@ input {
 .additional-info {
     display: flex;
     justify-content: space-between;
-    margin: 20px 30px 20px 0;
+    margin: 20px 0;
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     font-weight: 80%;
+    color: white;
+    margin-left:auto;
+    margin-right:50px;
+    width: 66%;
 }
 
 .info-section-part {
@@ -172,3 +191,40 @@ input {
     text-decoration:none;
 }
  
+
+@media (max-width: 600px) {
+    
+    .container {
+        width: 90%;
+        justify-content: center;
+    }
+    .basic-info-outline {
+        flex-direction: column;
+    }
+
+    #site-search {
+        width: 40%;
+        margin-right: 2px;
+        margin-left: auto;
+    }
+
+    .search-section {
+        flex-direction: row;
+        
+    }
+
+    .additional-info {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 998px) {
+    .container {
+        width: 90%;
+        justify-content: center;
+    }
+    .basic-info-outline {
+        flex-direction: column;
+    } 
+}
+  
